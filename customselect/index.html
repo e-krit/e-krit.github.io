@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script><![endif]-->
+		<title>Custom Select</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css">
+		<link rel="stylesheet" type="text/css" href="css/sumoselect.css">
+		<link rel="stylesheet" type="text/css" href="css/jquery.jscrollpane.css">
+		<link rel="stylesheet" type="text/css" href="css/fonts.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+	</head>
+	<body>
+		<main>
+			<div class="wrapper">
+				<div class="container">
+					<div class="container__title">
+						<h1>Custom Select</h1>
+					</div>
+					<div class="example">
+						<div class="example__information">
+							<h2>Необходимые файлы для подключения</h2>
+							<p>CSS files:</p>
+							<script async src="https://jsfiddle.net/dqxsebf5/embed/html/dark/"></script>
+							<p>Js files:</p>
+							<script async src="https://jsfiddle.net/0450q0rm/embed/html/dark/"></script>
+							<p>Для корректной работы плагина необходимо скачать и подключить соответствующие файлы. Скачать их можно по соответственным путям <b>скрпиты</b> в папке <b>/js</b>, <b>стили</b> в папке <b>/css</b></p>
+							<p>Так же можно скачать файлы с официальных сайтов:</p>
+							<ul>
+								<li><a href="http://jscrollpane.kelvinluck.com/">scrollPane</a></li>
+								<li><a href="https://jquery.com">jQuery</a></li>
+								<li><a href="https://github.com/jquery/jquery-mousewheel">Mousewheel</a></li>
+							</ul>
+							<h2>Иницилизация</h2>
+							<p>Создаем наш селектор:</p>
+							<script async src="https://jsfiddle.net/f3rr45jv/1/embed/html/dark/"></script>
+							<p><b>сlass="styled-select"</b> отвечает за стилизацию<br><b>сlass="js-select"</b> отвечает за навешивание плагина</p>
+							<p>Далее необходимо написать <b>js</b> код для иницилизации плагина.</p>
+							<script async src="https://jsfiddle.net/xsLo3uzb/embed/js/dark/"></script>
+							<p>Стилизуем наш скрытый select</p>
+							<script async src="https://jsfiddle.net/L8j4Lq2p/embed/css/dark/"></script>
+							<h2>Реализованные примеры</h2>
+							<p><b>Стилизованный селект</b></p>
+							<div class="example__select">
+								<span class="example__title">Title for select</span>
+								<select class="js-select styled-select">
+									<option disabled="disabled" selected>Sort by</option>
+									<option>Decrease in price</option>
+									<option>Ascending price</option>
+									<option>First new items</option>
+								</select>
+							</div>
+							<div class="example__select">
+								<span class="example__title">Title for select</span>
+								<select class="js-select styled-select">
+									<option disabled="disabled" selected>Сортировать по</option>
+									<option>Убыванию цены</option>
+									<option>Возрастанию цены</option>
+									<option>Сначала новинки</option>
+									<option>Сначала акционные товары</option>
+								</select>
+							</div>
+							<p><b>Стилизованный селекты со стилизованным скролом</b></p>
+							<div class="example__select">
+								<span class="example__title">Title for select</span>
+								<select class="js-select styled-select">
+									<option disabled="disabled" selected>Sort by</option>
+									<option>Decrease in price</option>
+									<option>Ascending price</option>
+									<option>First new items</option>
+									<option>Promotional products first</option>
+									<option>Promotional products first</option>
+									<option>Promotional products first</option>
+									<option>Promotional products first</option>
+								</select>
+							</div>
+							<div class="example__select">
+								<span class="example__title">Title for select</span>
+								<select class="js-select styled-select">
+									<option disabled="disabled" selected>Сортировать по</option>
+									<option>Убыванию цены</option>
+									<option>Возрастанию цены</option>
+									<option>Сначала новинки</option>
+									<option>Сначала акционные товары</option>
+									<option>Сначала акционные товары</option>
+									<option>Сначала акционные товары</option>
+									<option>Сначала акционные товары</option>
+									<option>Сначала акционные товары</option>
+								</select>
+							</div>
+							<h2>Стилизация</h2>
+							<p>Дальше необходимо отстилизовать ваш кастомный селектор.<br> Стили для кастомизации вы пишетв в главных стилях, а не в стилях плагинов.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<script src="js/modernizr.min.js" ></script>
+		<script src="js/jquery.min.js" ></script>
+		<script src="js/jquery.sumoselect.js" ></script>
+		<script src="js/jquery.mousewheel-3.0.6.pack.js" ></script>
+		<script src="js/jquery.jscrollpane.min.js" ></script>
+		<script src="js/script.js" ></script>
+	</body>
+</html>

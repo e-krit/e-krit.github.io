@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script><![endif]-->
+		<title>SlickSlider</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css">
+		<link rel="stylesheet" type="text/css" href="css/fonts.css">
+		<link rel="stylesheet" type="text/css" href="css/slick.css">
+		<link rel="stylesheet" type="text/css" href="css/element_slider.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+	</head>
+	<body>
+		<main>
+			<div class="wrapper">
+				<div class="container">
+					<div class="container__title">
+						<h1>SlickSlider</h1>
+					</div>
+					<div class="example">
+						<div class="example__information">
+							<p>Slick slider адаптивный слайдер для сайта. Можно управлять колличеством элементов для каждого необходимого разрешения.</p>
+							<h2>Необходимые файлы для подключения</h2>
+							<ul>
+								<li><a href="http://kenwheeler.github.io/slick/">SlickSlider</a></li>
+								<li><a href="https://jquery.com">jQuery</a></li>
+								<li><a href="https://github.com/kenwheeler/slick/">github Slick</a></li>
+							</ul>
+							<p>Для корректной работы плагина необходимо скачать и подключить соответствующие файлы. Скачать их можно по соответственным путям <b>скрпиты</b> в папке <b>/js</b>, <b>стили</b> в папке <b>/css</b></p>
+							<h2>Иницилизация</h2>
+							<p>Создаем наш слайдер:</p>
+							<script async src="https://jsfiddle.net/tmqmt5ky/embed/html/dark/"></script>
+							<p><b>сlass="exampleSlider"</b> отвечает за стилизацию<br><b>сlass="js-exampleSlider"</b> отвечает за навешивание плагина</p>
+							<p>Далее необходимо написать <b>js</b> код для иницилизации плагина.</p>
+							<script async src="https://jsfiddle.net/9kdfcpvx/embed/js/dark/"></script>
+						</div>
+						<p>Так же существует обильный перечень команд, используя которые вы сможете настроить слайдер по своему усмотрению.</p>
+						<p><b>аccessibility</b> – начальное значение этого параметра установлено как true, он отвечает за подключения навигационных кнопок для слайдера.<br>
+						<b>adaptiveHeight</b> – применяется только к одиночному слайдеру, у которого будет изменятся высота родительского контейнера в зависимости от высоты слайдера. В начальных условиях настройка не подключена.<br>
+						<b>autoplay</b> – настраивает перелистывание слайдов в автоматическом режиме, без вмешательства пользователя. Стандартное значение этой настройки соответствует false.<br>
+						<b>autoplaySpeed</b> – этот параметр является вспомогательным для autoplay и устанавливает промежуток времени, по истечении которого будет осуществлено автоматическое перелистывание слайда. Изначально для него прописано значение 3000 миллисекунд.<br>
+						<b>arrows</b> – подключает к слайдеру стрелки вперед и назад.<br>
+						<b>asNavFor</b> – устанавливает навигационную связь между двумя слайдерами посредством идентификатора или класса. В начальных условиях параметр соответствует нулевому значению.<br>
+						<b>prevArrow</b> – позволяет изменить внешний вид стандартной навигационной стрелки, которая отлистывает предыдущий слайд.<br>
+						<b>nextArrow</b> – аналогичен функциям предыдущему параметру, но отвечает за стрелку, переключающую слайд вперед.<br>
+						<b>centerMode</b> – фиксирует текущий слайд по центру родительского контейнера, изначально параметр выключен.<br>
+						<b>centerPadding</b> – при включенном центральном режиме показа текущего слайда устанавливает для этого слайда внутренний отступ, что визуально позволяет увеличивать текущий слайд.<br>
+						<b>cssEase</b> – отвечает за анимацию переключения картинок, может делать ее плавной или более резкой. Принимает стандартное значение ‘ease’.<br>
+						<b>customPaging</b> – позволяет вставлять собственный шаблон для просмотра слайдера.<br>
+						<b>dots</b> – подключает точки-переключатели, по умолчанию находится в выключенном состоянии.<br>
+						<b>draggable</b> – подключает возможность перелистывания слайдов зажатием мышки.<br>
+						<b>fade</b> – создает эффект затухания слайда при переключении, анимационный эффект.<br>
+						<b>focusOnSelect</b> – фокусирует заданный элемент слайдера.<br>
+						<b>easing</b> – позволяет установить особый анимационный режим при переключении картинок.<br>
+						<b>edgeFriction</b> – отключает переключение слайдов на последнем элементе. Срабатывает только в том случае, если слайдер не зациклен.<br>
+						<b>infinite</b> – зацикливает показ слайдов.<br>
+						<b>initialSlide</b> – определяет картинку, с которой начнется показ слайд-шоу. По умолчанию слайдер для старта выбирает первое по порядку изображение.<br>
+						<b>lazyLoad</b> – позволяет установить режим подгрузки следующих слайдов. Доступно только 2 значения для настройки: ‘ondemand’ и ‘progressive’, причем последнее является значением по умолчанию.<br>
+						<b>pauseOnHover</b> – останавливает перелистывание слайдов при наведении курсора мыши на тело слайдера. Работает, только если определено автоматическое переключение слайдов.<br>
+						<b>pauseOnDotsHover</b> — останавливает перелистывание слайдов при наведении курсора мыши на точечные переключатели. Работает, только если определено автоматическое переключение слайдов.<br>
+						<b>respondTo</b> – вызывает реакцию на изменения ширины окна браузера. Для использования доступны три значения: ‘window’, ‘slider’ или ‘min’.<br>
+						<b>responsive</b> – позволяет адаптировать настройки слайдера под ширину экрана. Отличается от предыдущей настройки тем, что ограничение ширины определяется точным значением в пикселях. Используется для адаптивной верстки под мобильные устройства.<br>
+						<b>slidesToShow</b> – позволяет установить количество картинок, выводимых в видимой зоне. Изначально показывается 1 слайд, но этим значением можно варьировать.<br>
+						<b>slidesToScroll</b> – сообщает слайдеру сколько нужно поменять картинок при переключении.<br>
+						<b>speed</b> – фиксирует скорость, с которой будет осуществляться переключение слайдов.<br>
+						<b>variableWidth</b> – адаптирует ширину контейнеров слайдера под ширину каждой показываемой картинки.</p>
+						<h2>Реализованные пример</h2>
+						<section class="elementSlider">
+							<div class="elementSlider__slider js-elementSlider">
+										<div class="elementSlider__item">
+											<a href="#" class="elementSlider__link">
+												<div class="elementSlider__img">
+													<div class="elementSlider__img-cell">
+														<img src="media/slider-1.jpg" class="elementSlider__img-img" alt=""/>
+													</div>
+													<span class="elementSlider__link-title">
+														Помещение свободного назначения, 350 м<sup>2</sup>
+													</span>
+												</div>
+												<div class="elementSlider__row">
+													<div class="elementSlider__col left">
+														<span class="elementSlider__col-title">Общая площадь&nbsp;м<sup>2</sup></span>
+														<span class="elementSlider__col-info">3 500</span>
+													</div>
+													<div class="elementSlider__col right">
+														<span class="elementSlider__col-title">Стоимость участка</span>
+														<span class="elementSlider__col-info">14 млн.<ins class="rub">a</ins></span>
+													</div>
+												</div>
+											</a>
+										</div>
+										<div class="elementSlider__item">
+											<a href="#" class="elementSlider__link">
+												<div class="elementSlider__img">
+													<div class="elementSlider__img-cell">
+														<img src="media/slider-1.jpg" class="elementSlider__img-img" alt=""/>
+													</div>
+													<span class="elementSlider__link-title">
+														Помещение свободного назначения, 350 м<sup>2</sup>
+													</span>
+												</div>
+												<div class="elementSlider__row">
+													<div class="elementSlider__col left">
+														<span class="elementSlider__col-title">Общая площадь&nbsp;м<sup>2</sup></span>
+														<span class="elementSlider__col-info">3 500</span>
+													</div>
+													<div class="elementSlider__col right">
+														<span class="elementSlider__col-title">Стоимость участка</span>
+														<span class="elementSlider__col-info">14 млн.<ins class="rub">a</ins></span>
+													</div>
+												</div>
+											</a>
+										</div>
+										<div class="elementSlider__item">
+											<a href="#" class="elementSlider__link">
+												<div class="elementSlider__img">
+													<div class="elementSlider__img-cell">
+														<img src="media/slider-1.jpg" class="elementSlider__img-img" alt=""/>
+													</div>
+													<span class="elementSlider__link-title">
+														Помещение свободного назначения, 350 м<sup>2</sup>
+													</span>
+												</div>
+												<div class="elementSlider__row">
+													<div class="elementSlider__col left">
+														<span class="elementSlider__col-title">Общая площадь&nbsp;м<sup>2</sup></span>
+														<span class="elementSlider__col-info">3 500</span>
+													</div>
+													<div class="elementSlider__col right">
+														<span class="elementSlider__col-title">Стоимость участка</span>
+														<span class="elementSlider__col-info">14 млн.<ins class="rub">a</ins></span>
+													</div>
+												</div>
+											</a>
+										</div>
+										<div class="elementSlider__item">
+											<a href="#" class="elementSlider__link">
+												<div class="elementSlider__img">
+													<div class="elementSlider__img-cell">
+														<img src="media/slider-1.jpg" class="elementSlider__img-img" alt=""/>
+													</div>
+													<span class="elementSlider__link-title">
+														Помещение свободного назначения, 350 м<sup>2</sup>
+													</span>
+												</div>
+												<div class="elementSlider__row">
+													<div class="elementSlider__col left">
+														<span class="elementSlider__col-title">Общая площадь&nbsp;м<sup>2</sup></span>
+														<span class="elementSlider__col-info">3 500</span>
+													</div>
+													<div class="elementSlider__col right">
+														<span class="elementSlider__col-title">Стоимость участка</span>
+														<span class="elementSlider__col-info">14 млн.<ins class="rub">a</ins></span>
+													</div>
+												</div>
+											</a>
+										</div>
+							</div>
+						</section>
+					</div>
+				</div>
+			</div>
+		</main>
+		<script src="js/modernizr.min.js"></script>
+		<script src="js/jquery.min.js"></script>
+		<script src="js/slick.min.js"></script>
+		<script src="js/script.js"></script>
+	</body>
+</html>

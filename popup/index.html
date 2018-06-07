@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script><![endif]-->
+		<title>popUp</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css">
+		<link rel="stylesheet" type="text/css" href="css/fonts.css">
+		<link rel="stylesheet" type="text/css" href="css/slick.css">
+		<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" type="text/css" href="css/pop_up.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+	</head>
+	<body>
+		<main>
+			<div class="wrapper">
+				<div class="container">
+					<div class="container__title">
+						<h1>popUp</h1>
+					</div>
+					<div class="example">
+						<div class="example__information">
+							<p>Slick slider адаптивный слайдер для сайта. Можно управлять колличеством элементов для каждого необходимого разрешения.</p>
+							<h2>Необходимые файлы для подключения</h2>
+							<ul>
+								<li><a href="https://github.com/malsup/blockui">BlockUi</a></li>
+								<li><a href="https://jquery.com">jQuery</a></li>
+							</ul>
+							<h2>Иницилизация</h2>
+							<p>Создаем наш popUp:</p>
+							<script async src="https://jsfiddle.net/f8bq78fz/embed/html/dark/"></script>
+							<p><b>&lt;a href=&quot;#examplePopUp&quot; class=&quot;js-show-popup&quot;&gt;</b> кнопка открытия формы где a href="#examplePopUp" это id открывающейся формы.</p>
+							<p><b>&lt;div id=&quot;examplePopUp&quot; class=&quot;popUpForm hidden-block&quot;&gt;</b> id - связка с кнопкой.</p>
+							<p>Далее необходимо написать <b>js</b> код для иницилизации плагина.</p>
+							<script async src="https://jsfiddle.net/npqtnx7w/embed/js/dark/"></script>
+						</div>
+						<h2>Расположение</h2>
+						<p>Стили для всех форм должны лежать в pop_up.css, а скрипт должен лежать в pop_up.js.</p>
+						<h2>Настройки</h2>
+						<table class="posttb">
+							<tbody>
+							<tr>
+							<th>Параметр</th>
+							<th>По умолчанию</th>
+							<th>Описание параметра</th>
+							</tr>
+							<tr>
+							<td><em>message</em></td>
+							<td><em>‘&lt;h1&gt;Please wait…&lt;/h1&gt;’</em></td>
+							<td>Текст сообщения который отображается при блокировки, можно указывать теги.</td>
+							</tr>
+							<tr>
+							<td><em>title</em></td>
+							<td><em>null</em></td>
+							<td>Устанавливает заголовок блокирующего окна. Эта настройка работает только если включена настройка <em>theme</em></td>
+							</tr>
+							<tr>
+							<td><em>draggable</em></td>
+							<td><em>true</em></td>
+							<td>Позволяем перетягивать курсором мышки блокирующее окно. Эта настройка работает только если включена настройка <em>theme</em></td>
+							</tr>
+							<tr>
+							<td><em>theme</em></td>
+							<td><em>false</em></td>
+							<td>Подключает визуальную тему и функционал от jQuery UI. Для кого-то может быть и полезная функция, но мне не нравится она, чтобы корректно все отображалось нужно будет еще подключать UI скрипты и стили.</td>
+							</tr>
+							<tr>
+							<td><em>css</em></td>
+							<td>
+
+							<div class="codecolorer-container javascript railscasts" style="overflow:auto;white-space:nowrap;width:100%;"><table cellspacing="0" cellpadding="0"><tbody><tr><td class="line-numbers"><div>1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10<br>11<br>12<br></div></td><td><div class="javascript codecolorer">css<span class="sy0">:</span> <span class="br0">{</span> <br>
+							padding<span class="sy0">:</span> <span class="nu0">0</span><span class="sy0">,</span> <br>
+							margin<span class="sy0">:</span> <span class="nu0">0</span><span class="sy0">,</span> <br>
+							width<span class="sy0">:</span> <span class="st0">'30%'</span><span class="sy0">,</span> <br>
+							top<span class="sy0">:</span> <span class="st0">'40%'</span><span class="sy0">,</span> <br>
+							left<span class="sy0">:</span> <span class="st0">'35%'</span><span class="sy0">,</span> <br>
+							textAlign<span class="sy0">:</span> <span class="st0">'center'</span><span class="sy0">,</span> <br>
+							color<span class="sy0">:</span> <span class="st0">'#000'</span><span class="sy0">,</span> <br>
+							border<span class="sy0">:</span> <span class="st0">'3px solid #aaa'</span><span class="sy0">,</span> <br>
+							backgroundColor<span class="sy0">:</span><span class="st0">'#fff'</span><span class="sy0">,</span> <br>
+							cursor<span class="sy0">:</span> <span class="st0">'wait'</span> <br>
+							<span class="br0">}</span></div></td></tr></tbody></table></div>
+
+							</td>
+							<td>Визуальные настройки блокирующего окна, стандартные параметры вполне подходят.</td>
+							</tr>
+							<tr>
+							<td><em>themedCSS</em></td>
+							<td>
+
+							<div class="codecolorer-container javascript railscasts" style="overflow:auto;white-space:nowrap;width:100%;"><table cellspacing="0" cellpadding="0"><tbody><tr><td class="line-numbers"><div>1<br>2<br>3<br>4<br>5<br></div></td><td><div class="javascript codecolorer">themedCSS<span class="sy0">:</span> <span class="br0">{</span> <br>
+							width<span class="sy0">:</span> <span class="st0">'30%'</span><span class="sy0">,</span> <br>
+							top<span class="sy0">:</span> <span class="st0">'40%'</span><span class="sy0">,</span> <br>
+							left<span class="sy0">:</span> <span class="st0">'35%'</span> <br>
+							<span class="br0">}</span></div></td></tr></tbody></table></div>
+
+							</td>
+							<td>Так же как и <em>css</em>, настраивает внешний вид блокирующего окна. Но эта настройка работает только если включена настройка <em>theme</em></td>
+							</tr>
+							<tr>
+							<td><em>overlayCSS</em></td>
+							<td>
+
+							<div class="codecolorer-container javascript railscasts" style="overflow:auto;white-space:nowrap;width:100%;"><table cellspacing="0" cellpadding="0"><tbody><tr><td class="line-numbers"><div>1<br>2<br>3<br>4<br>5<br></div></td><td><div class="javascript codecolorer">overlayCSS<span class="sy0">:</span> <span class="br0">{</span> <br>
+							backgroundColor<span class="sy0">:</span> <span class="st0">'#000'</span><span class="sy0">,</span> <br>
+							opacity<span class="sy0">:</span> <span class="nu0">0.6</span><span class="sy0">,</span> <br>
+							cursor<span class="sy0">:</span> <span class="st0">'wait'</span> <br>
+							<span class="br0">}</span><span class="sy0">,</span></div></td></tr></tbody></table></div>
+
+							</td>
+							<td>Данная настройка регулирует фон блокирующего окна, цвет фона, прозрачность и курсор.</td>
+							</tr>
+							<tr>
+							<td><em>cursorReset</em></td>
+							<td><em>‘default’</em></td>
+							<td>Не совсем понятная настройка, судя по экспериментам она регулирует тип курсора в момент снятия блокировки.</td>
+							</tr>
+							<tr>
+							<td><em>growlCSS</em></td>
+							<td>
+
+							<div class="codecolorer-container javascript railscasts" style="overflow:auto;white-space:nowrap;width:100%;"><table cellspacing="0" cellpadding="0"><tbody><tr><td class="line-numbers"><div>1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10<br>11<br>12<br>13<br>14<br></div></td><td><div class="javascript codecolorer">growlCSS<span class="sy0">:</span> <span class="br0">{</span> <br>
+							width<span class="sy0">:</span> <span class="st0">'350px'</span><span class="sy0">,</span> <br>
+							top<span class="sy0">:</span> <span class="st0">'10px'</span><span class="sy0">,</span> <br>
+							left<span class="sy0">:</span> <span class="st0">''</span><span class="sy0">,</span> <br>
+							right<span class="sy0">:</span> <span class="st0">'10px'</span><span class="sy0">,</span> <br>
+							border<span class="sy0">:</span> <span class="st0">'none'</span><span class="sy0">,</span> <br>
+							padding<span class="sy0">:</span> <span class="st0">'5px'</span><span class="sy0">,</span> <br>
+							opacity<span class="sy0">:</span> <span class="nu0">0.6</span><span class="sy0">,</span> <br>
+							cursor<span class="sy0">:</span> <span class="kw2">null</span><span class="sy0">,</span> <br>
+							color<span class="sy0">:</span> <span class="st0">'#fff'</span><span class="sy0">,</span> <br>
+							backgroundColor<span class="sy0">:</span> <span class="st0">'#000'</span><span class="sy0">,</span> <br>
+							<span class="st0">'-webkit-border-radius'</span><span class="sy0">:</span> <span class="st0">'10px'</span><span class="sy0">,</span> <br>
+							<span class="st0">'-moz-border-radius'</span><span class="sy0">:</span> <span class="st0">'10px'</span> <br>
+							<span class="br0">}</span><span class="sy0">,</span></div></td></tr></tbody></table></div>
+
+							</td>
+							<td>Настраивает внешний вид быстрых сообщений. Подробнее об этом на демо странице, вызывается кодом: <em>$.growlUI(‘Заголовок’, ‘Текст!’);</em></td>
+							</tr>
+							<tr>
+							<td><em>iframeSrc</em></td>
+							<td><em>js code</em></td>
+							<td>Судя по описанию из документации, настройка что-то делает когда работает в старых IE браузерах.</td>
+							</tr>
+							<tr>
+							<td><em>forceIframe</em></td>
+							<td><em>false</em></td>
+							<td>Связана с настройкой выше.</td>
+							</tr>
+							<tr>
+							<td><em>baseZ</em></td>
+							<td><em>1000</em></td>
+							<td>Регулирует позицию блокирующего слоя по оси Z.</td>
+							</tr>
+							<tr>
+							<td><em>centerX</em> и <em>centerY</em></td>
+							<td><em>true</em></td>
+							<td>Центрирует блокирующее окно.</td>
+							</tr>
+							<tr>
+							<td><em>allowBodyStretch</em></td>
+							<td><em>true</em></td>
+							<td>Еще одна настройка которая не показала особого эффекта, скорей всего предназначена для старых IE браузеров.</td>
+							</tr>
+							<tr>
+							<td><em>bindEvents</em></td>
+							<td><em>true</em></td>
+							<td>Блокирует нажатия кнопок мыши.</td>
+							</tr>
+							<tr>
+							<td><em>constrainTabKey</em></td>
+							<td><em>true</em></td>
+							<td>Блокирует нажатие кнопки Tab&lt;./td&gt;</td>
+							</tr>
+							<tr>
+							<td><em>fadeIn</em></td>
+							<td><em>200</em></td>
+							<td>Скорость анимации при появлении.</td>
+							</tr>
+							<tr>
+							<td><em>fadeOut</em></td>
+							<td><em>400</em></td>
+							<td>Скорость анимации при скрытии.</td>
+							</tr>
+							<tr>
+							<td><em>timeout</em></td>
+							<td><em>0</em></td>
+							<td>По истечении указанного времени автоматически снимает блокировку.</td>
+							</tr>
+							<tr>
+							<td><em>showOverlay</em></td>
+							<td><em>true</em></td>
+							<td>Отключает наложение фона за блокирующем окном.</td>
+							</tr>
+							<tr>
+							<td><em>focusInput</em></td>
+							<td><em>true</em></td>
+							<td>Судя по описанию в документации, должно устанавливать курсор и первое пустое текстовое поле на странице.</td>
+							</tr>
+							<tr>
+							<td><em>blockMsgClass</em></td>
+							<td><em>‘blockMsg’</em></td>
+							<td>CSS класс блокирующего окна.</td>
+							</tr>
+							<tr>
+							<td><em>ignoreIfBlocked</em></td>
+							<td><em>false</em></td>
+							<td>Если элемент или страница уже заблокированы то повторно не блокируем.</td>
+							</tr>
+							<tr>
+							<td><em>quirksmodeOffsetHack</em></td>
+							<td><em>4</em></td>
+							<td>какая-то непонятная секретная настройка о которой даже в документации ничего не пишут ))</td>
+							</tr>
+							</tbody>
+						</table>
+						<h2>Реализованные пример</h2>
+						<div class="">
+							<a href="#examplePopUp" class="js-show-popup">CLICK BUTTON</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<div id="examplePopUp" class="popUpForm hidden-block">
+			<div class="popUpForm__block">
+				<a href="#" class="popUpForm__close js-close-form"></a>
+				<div class="container-fluid">
+					<div class="row">
+						<div class="popUpForm__container">
+							<form action="">
+								<span class="popUpForm__title">Получить консультацию</span>
+								<div class="formField">
+									<input
+										type="text"
+										name="text-name"
+										placeholder="Ваше Ф.И.О." 
+									/>
+								</div>
+								<div class="formField">
+									<input
+										type="text"
+										name="text-phone"
+										class="js-phoneInput"
+										placeholder="Номер телефона" 
+									/>
+								</div>
+								<div class="formField">
+									<input
+										type="text"
+										name="text-email"
+										placeholder="Email" 
+									/>
+								</div>
+								<div class="formField">
+									<textarea name="text-message" placeholder="Ваш вопрос"></textarea>
+								</div>
+								<div class="popUpForm__field formField">
+									<button class="button button__color">Отправить</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="js/modernizr.min.js"></script>
+		<script src="js/jquery.min.js"></script>
+		<script src="js/jquery.blockUI.js"></script>
+		<script src="js/script.js"></script>
+	</body>
+</html>

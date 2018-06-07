@@ -1,0 +1,574 @@
+.exampleTab__tabs {
+  display: none;
+}
+
+.exampleTab__tabblock {
+  margin-top: 37px;
+}
+
+.exampleTab__title {
+  padding-right: 10px;
+  margin-bottom: 21px;
+  padding-left: 10px;
+  margin-top: 18px;
+}
+
+.exampleTab__title h2 {
+  letter-spacing: 0;
+  font-size: 24px;
+  text-align: center;
+}
+
+.exampleTab__choose {
+  padding-right: 20px;
+  padding-left: 20px;
+  position: relative;
+}
+
+.exampleTab__pick {
+  font-size: 14px;
+  display: inline-block;
+  vertical-align: top;
+  padding-top: 8px;
+  margin-right: 13px;
+}
+
+.exampleTab__mobileSelect {
+  width: 175px;
+  display: inline-block;
+  vertical-align: top;
+  border: 1px solid #c9bbf3;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  color: #4b1dd8;
+  cursor: pointer;
+  font-size: 14px;
+  font-family: "PTSansBold";
+  padding-top: 7px;
+  padding-left: 14px;
+  position: relative;
+  padding-bottom: 9px;
+  padding-right: 27px;
+  white-space: nowrap;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+}
+
+.exampleTab__mobileSelect:after {
+  font-family: "grant_1";
+  -webkit-transition: all 0.24s;
+  -o-transition: all 0.24s;
+  -moz-transition: all 0.24s;
+  transition: all 0.24s;
+  position: absolute;
+  right: 12px;
+  top: 9px;
+  color: #4c1ed8;
+  content: "\61";
+  font-size: 8px;
+  font-style: normal;
+}
+
+.slick-active .exampleTabSlider__link:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  border-right: 1px dotted #5429da;
+}
+
+.exampleTabSlider {
+  padding-left: 20px;
+  padding-right: 20px;
+  max-height: 222px;
+  overflow: hidden;
+  -webkit-transition: 0.3s all;
+  -o-transition: 0.3s all;
+  -moz-transition: 0.3s all;
+  transition: 0.3s all;
+  opacity: 0;
+  -webkit-transform: scale(2);
+  -moz-transform: scale(2);
+  -ms-transform: scale(2);
+  -o-transform: scale(2);
+  transform: scale(2);
+}
+
+.exampleTabSlider.visible {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+}
+
+.exampleTabSlider__item {
+  width: 280px;
+  text-align: center;
+  padding-top: 12px;
+}
+
+.exampleTabSlider__link {
+  display: block;
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-decoration: none;
+  height: 210px;
+  position: relative;
+}
+
+.exampleTabSlider__link:after {
+  content: '';
+  position: absolute;
+  right: 0px;
+  top: 0;
+  height: 100%;
+  border-right: 1px dotted #5429da;
+}
+
+.exampleTabSlider__circle {
+  width: 128px;
+  height: 128px;
+  color: #fff;
+  background-color: #5429da;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  display: inline-block;
+  text-align: center;
+  padding-top: 55px;
+  vertical-align: top;
+  margin-bottom: 17px;
+}
+
+.exampleTabSlider__from {
+  display: none;
+}
+
+.exampleTabSlider__title {
+  display: block;
+  color: #2a2b37;
+  font-size: 16px;
+  text-align: center;
+  line-height: 18px;
+  letter-spacing: 0.6px;
+}
+
+.exampleTabSlider__procent {
+  font-size: 42px;
+  letter-spacing: -1px;
+  font-family: "GothamBold";
+}
+
+.exampleTabSlider .slick-arrow {
+  position: absolute;
+  right: 0;
+  top: 56px;
+  z-index: 10;
+  font-size: 0;
+  width: 40px;
+  height: 40px;
+  background: white;
+  -webkit-transform: perspective(1px) translateZ(0);
+  -moz-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  -webkit-transition-property: color;
+  -o-transition-property: color;
+  -moz-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  border: 0;
+}
+
+.exampleTabSlider .slick-arrow:hover:before {
+  color: #fff;
+}
+
+.exampleTabSlider .slick-arrow:hover:after {
+  -webkit-transform: scaleX(1);
+  -moz-transform: scaleX(1);
+  -ms-transform: scaleX(1);
+  -o-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+.exampleTabSlider .slick-arrow:before {
+  content: "\70";
+  color: #4b1dd8;
+  font-family: "grant_1";
+  font-size: 20px;
+  -webkit-transition: 0.3s all;
+  -o-transition: 0.3s all;
+  -moz-transition: 0.3s all;
+  transition: 0.3s all;
+}
+
+.exampleTabSlider .slick-prev {
+  left: 0;
+  right: auto;
+}
+
+.exampleTabSlider .slick-prev:before {
+  content: "\6f";
+}
+
+.exampleTabSlider .slick-next:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #4b1dd8;
+  -webkit-transform: scaleX(0);
+  -moz-transform: scaleX(0);
+  -ms-transform: scaleX(0);
+  -o-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: 0 50%;
+  -moz-transform-origin: 0 50%;
+  -ms-transform-origin: 0 50%;
+  -o-transform-origin: 0 50%;
+  transform-origin: 0 50%;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  -o-transition-property: -o-transform;
+  -moz-transition-property: transform, -moz-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform, -moz-transform, -o-transform;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  -moz-transition-timing-function: ease-out;
+  -o-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+
+.exampleTabSlider .slick-prev {
+  left: 0;
+  right: auto;
+}
+
+.exampleTabSlider .slick-prev:before {
+  content: "\6f";
+}
+
+.exampleTabSlider .slick-prev:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #4b1dd8;
+  -webkit-transform: scaleX(0);
+  -moz-transform: scaleX(0);
+  -ms-transform: scaleX(0);
+  -o-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: 100% 50%;
+  -moz-transform-origin: 100% 50%;
+  -ms-transform-origin: 100% 50%;
+  -o-transform-origin: 100% 50%;
+  transform-origin: 100% 50%;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  -o-transition-property: -o-transform;
+  -moz-transition-property: transform, -moz-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform, -moz-transform, -o-transform;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  -moz-transition-timing-function: ease-out;
+  -o-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+@media screen and (min-width: 768px) {
+  .exampleTabSlider__link:after {
+    right: -1px;
+  }
+
+  .exampleTab__title h2 {
+    font-size: 32px;
+    margin-top: 48px;
+    letter-spacing: 0.5px;
+    margin-bottom: 39px;
+  }
+
+  .exampleTab__pick {
+    display: none;
+  }
+
+  .exampleTab__mobileSelect {
+    display: none;
+  }
+
+  .exampleTab__tab {
+    font-family: "Gotham";
+    text-decoration: none;
+    color: #5429da;
+    font-size: 18px;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+  }
+
+  .exampleTab__tab:after {
+    content: '';
+    -webkit-transition: 0.3s all;
+    -o-transition: 0.3s all;
+    -moz-transition: 0.3s all;
+    transition: 0.3s all;
+    position: absolute;
+    bottom: -23px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: #2a2b37;
+  }
+
+  .exampleTab__tab:before {
+    content: '';
+    -webkit-transition: 0.3s all;
+    -o-transition: 0.3s all;
+    -moz-transition: 0.3s all;
+    transition: 0.3s all;
+    position: absolute;
+    bottom: -23px;
+    right: 0;
+    width: 0;
+    height: 3px;
+    background-color: #2a2b37;
+  }
+
+  .exampleTab__tab.-active {
+    color: #2a2b37;
+    pointer-events: none;
+    cursor: not-allowed;
+  }
+
+  .exampleTab__tab.-active:after,.exampleTab__tab.-active:before {
+    width: 100%;
+  }
+
+  .exampleTab__tabblock {
+    margin-top: 31px;
+  }
+
+  .exampleTab__tabs {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -moz-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 100%;
+    border-bottom: 1px solid #dad7e3;
+    padding-bottom: 22px;
+  }
+
+  .exampleTabSlider__item {
+    width: 242px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .exampleTab__tab {
+    -webkit-transition: 0.24s all;
+    -o-transition: 0.24s all;
+    -moz-transition: 0.24s all;
+    transition: 0.24s all;
+  }
+
+  .exampleTab__tab:hover {
+    color: #2a2b37;
+  }
+
+  .slick-active .exampleTabSlider__link:before {
+    width: 3px;
+    background: #fff;
+    z-index: 2;
+    left: -1px;
+  }
+
+  .exampleTabSlider__item {
+    width: 240px;
+  }
+
+  .exampleTabSlider__link:after {
+    z-index: 1;
+    background-color: #fff;
+    right: 0px;
+  }
+
+  .exampleTabSlider__link:hover .exampleTabSlider__circle::before {
+    -webkit-animation: circle .75s;
+    -moz-animation: circle .75s;
+    -o-animation: circle .75s;
+    animation: circle .75s;
+  }
+
+  .exampleTabSlider__link:hover .exampleTabSlider__title {
+    color: #5429da;
+  }
+
+  .exampleTabSlider__circle {
+    position: relative;
+  }
+
+  .exampleTabSlider__circle::before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+    display: block;
+    content: '';
+    width: 0;
+    height: 0;
+    background: rgba(255, 255, 255, 0.2);
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    opacity: 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .exampleTab__mobileSelect.active {
+    background-color: #5b42db;
+    color: #fff;
+  }
+
+  .exampleTab__mobileSelect.active:after {
+    color: #fff;
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+    top: 8px;
+  }
+
+  .exampleTab__tabs.visible {
+    position: absolute;
+    left: 124px;
+    width: 175px;
+    background-color: #fff;
+    display: block;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    z-index: 5;
+    -webkit-box-shadow: 5px 8.66px 30px 0px rgba(29, 30, 41, 0.294);
+    -moz-box-shadow: 5px 8.66px 30px 0px rgba(29, 30, 41, 0.294);
+    box-shadow: 5px 8.66px 30px 0px rgba(29, 30, 41, 0.294);
+    top: 41px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .exampleTab__tab {
+    color: #3e2d8e;
+    font-family: "PTSansBold";
+    text-decoration: none;
+    font-size: 14px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    line-height: 19px;
+    padding-left: 14px;
+    padding-right: 15px;
+    display: block;
+  }
+
+  .exampleTab__tab.-active {
+    display: none;
+  }
+}
+
+@-webkit-keyframes circle {
+  0% {
+    opacity: 1;
+  }
+
+  40% {
+    opacity: 1;
+  }
+
+  100% {
+    width: 200%;
+    height: 200%;
+    opacity: 0;
+  }
+}
+
+@-moz-keyframes circle {
+  0% {
+    opacity: 1;
+  }
+
+  40% {
+    opacity: 1;
+  }
+
+  100% {
+    width: 200%;
+    height: 200%;
+    opacity: 0;
+  }
+}
+
+@-o-keyframes circle {
+  0% {
+    opacity: 1;
+  }
+
+  40% {
+    opacity: 1;
+  }
+
+  100% {
+    width: 200%;
+    height: 200%;
+    opacity: 0;
+  }
+}
+
+@keyframes circle {
+  0% {
+    opacity: 1;
+  }
+
+  40% {
+    opacity: 1;
+  }
+
+  100% {
+    width: 200%;
+    height: 200%;
+    opacity: 0;
+  }
+}

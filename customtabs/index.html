@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script><![endif]-->
+		<title>Custom Tabs</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css">
+		<link rel="stylesheet" type="text/css" href="css/sumoselect.css">
+		<link rel="stylesheet" type="text/css" href="css/jquery.jscrollpane.css">
+		<link rel="stylesheet" type="text/css" href="css/fonts.css">
+		<link rel="stylesheet" type="text/css" href="css/tabstyle.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+	</head>
+	<body>
+		<main>
+			<div class="wrapper">
+				<div class="container">
+					<div class="container__title">
+						<h1>Custom Tabs</h1>
+					</div>
+					<div class="example">
+						<div class="example__information">
+							<h2>Необходимые файлы для подключения</h2>
+							<p>Для корректной работы необходимо скачать jQuery библиотеку 3.3.1</p>
+							<ul>
+								<li><a href="https://jquery.com">jQuery</a></li>
+							</ul>
+							<h2>Иницилизация</h2>
+							<p>Создаем блок для табов:</p>
+							<script async src="https://jsfiddle.net/dyzadoLd/embed/html/dark/"></script>
+							<p><b>Общий блок для табов</b> - class="exampleTab js-tabsblock"</p>
+							<p><b>Блок для мобильного разрешения</b> - class="exampleTab__mobileSelect js-mobile-tab-link"</p>
+							<p><b>Ссылка для смены таба</b> - class="js-tab-link exampleTab__tab -active", так же у ссылки есть <b>data-href</b> с классом привязанным к открывающиму блоку, class="-active" показывает что данный блок открыт</p>
+							<p><b>Таб айтем</b> - class="exampleTab__item js-tab__elem1 js-tab", class="js-tab__elem1" именной индификатор для связывания с ссылкой.</p>
+							<p>Далее необходимо написать <b>js</b> код для иницилизации табов.</p>
+							<script async src="https://jsfiddle.net/c3hkndyz/embed/js/dark/"></script>
+							<h2>Реализованные примеры</h2>
+							<section class="exampleTabSection">
+								<div class="exampleTab js-tabsblock">
+									<div class="exampleTab__choose">
+										<span class="exampleTab__pick">Выбрать таб:</span>
+										<span class="exampleTab__mobileSelect js-mobile-tab-link">Таб 1</span>
+										<div class="exampleTab__tabs js-mobiletabs">
+											<a href="javascript:void(0);" data-href="elem1" class="js-tab-link exampleTab__tab -active">Таб 2</a>
+											<a href="javascript:void(0);" data-href="elem2" class="js-tab-link exampleTab__tab">Таб 3</a>
+											<a href="javascript:void(0);" data-href="elem3" class="js-tab-link exampleTab__tab">Таб 4</a>
+											<a href="javascript:void(0);" data-href="elem4" class="js-tab-link exampleTab__tab">Таб 5</a>
+											<a href="javascript:void(0);" data-href="elem5" class="js-tab-link exampleTab__tab">Таб 6</a>
+										</div>
+									</div>
+									<div class="exampleTab__tabblock">
+										<div class="exampleTab__item js-tab__elem1 js-tab">
+											111111111111111111111111111111111111111111111111111
+										</div>
+										<div class="exampleTab__item js-tab__elem2 hidden-block js-tab">
+											22222222222222222222222222222222222222222222222222222
+										</div>
+										<div class="exampleTab__item js-tab__elem3 hidden-block js-tab">
+											3333333333333333333333333333333
+										</div>
+										<div class="exampleTab__item js-tab__elem4 hidden-block js-tab">
+											4444444444444444444444444444444
+										</div>
+										<div class="exampleTab__item js-tab__elem5 hidden-block js-tab">
+											5555555555555555555555555555555555
+										</div>
+									</div>
+								</div>
+							</section>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<script src="js/modernizr.min.js" ></script>
+		<script src="js/jquery.min.js" ></script>
+		<script src="js/script.js" ></script>
+	</body>
+</html>

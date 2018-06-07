@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script><![endif]-->
+		<title>toolTip</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css">
+		<link rel="stylesheet" type="text/css" href="css/fonts.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+	</head>
+	<body>
+		<main>
+			<div class="wrapper">
+				<div class="container">
+					<div class="container__title">
+						<h1>toolTip</h1>
+					</div>
+					<div class="example">
+						<div class="example__information">
+							<h2>Информация</h2>
+							<p>Всплывающая подсказка служит для помощи юзеру получить дополнительную информацию не занимая лишнего места на странице.</p>
+							<p>Есть несколько вариантов создание всплывающей подсказки.</p>
+							<ol>
+								<li>Через data attr. Записываем в data-tooltip="example" нужную информацию и показываем через before,after</li>
+								<li>создаем один блок с информацией и подсказкой и с помощью опасити скрываем подсказку и при наведении показываем</li>
+							</ol>
+							<p>Лучше всегда выбирать 2 способ. Он проще при добавлении и редактировании, элемент не имеет огромный data attr</p>
+							<h2>Реализация №1</h2>
+							<p data-height="265" data-theme-id="dark" data-slug-hash="jZxwRo" data-default-tab="css,result" data-user="yaroslavkurov" data-embed-version="2" data-pen-title="jZxwRo" class="codepen">See the Pen <a href="https://codepen.io/yaroslavkurov/pen/jZxwRo/">jZxwRo</a> by Yaroslav (<a href="https://codepen.io/yaroslavkurov">@yaroslavkurov</a>) on <a href="https://codepen.io">CodePen</a>.</p><script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+							<h2>Реализация №2</h2>
+							<p data-height="265" data-theme-id="dark" data-slug-hash="GQdvZX" data-default-tab="css,result" data-user="yaroslavkurov" data-embed-version="2" data-pen-title="GQdvZX" class="codepen">See the Pen <a href="https://codepen.io/yaroslavkurov/pen/GQdvZX/">GQdvZX</a> by Yaroslav (<a href="https://codepen.io/yaroslavkurov">@yaroslavkurov</a>) on <a href="https://codepen.io">CodePen</a>.</p><script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+							<h2>Дополнительно</h2>
+							<p>Так же есть сайт с реализованными всплывающими подсказками, с разными эффектами можно посмотреть по ссылке - <a href="https://tympanus.net/Development/TooltipStylesInspiration/">сайт</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<script src="js/modernizr.min.js" ></script>
+		<script src="js/jquery.min.js" ></script>
+	</body>
+</html>
