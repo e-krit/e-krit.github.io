@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script><![endif]-->
+		<title>Ajax</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css">
+		<link rel="stylesheet" type="text/css" href="css/fonts.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+	</head>
+	<body>
+		<main>
+			<div class="wrapper">
+				<div class="container">
+					<div class="container__title">
+						<h1>Ajax</h1>
+					</div>
+					<div class="example">
+						<div class="example__information">
+							<h2>Общее</h2>
+							<p><b>AJAX</b>: AJAX (аббревиатура от «Asynchronous Javascript And Xml») – технология обращения к серверу без перезагрузки страницы.</p>
+							<p><b>Применение</b>: Формы,Навигация в виде "дерева",Голосования,Система комментариев. Пример: на сайте есть статьи, к которым можно приписывать комментарии, Фильтры.</p>
+							<p><b>Безопасность (CORS)</b>: Cross-origin resource sharing (CORS, «совместное использование ресурсов между разными источниками») — технология современных браузеров, которая позволяет предоставить веб-странице доступ к ресурсам другого домена. До недавнего времени основным способом преодоления ограничений, наложенных в same-origin-policy относительно XSS запросов, было использование JSONP. Сам JSONP имеет неустранимое ограничение — позволяет только получение данных GET методом, то есть отправка данных через POST метод остается недоступной.</p>
+							<h2>jQuery</h2>
+							<p><b>$.ajax</b><br> Осуществляет запрос к серверу без перезагрузки страницы. Это низкоуровневый метод, обладающий большим количеством настроек. Он лежит в основе работы всех остальных методов ajax. Имеет два варианта использования:</p>
+							<p><b>jQuery.ajax(url,[settings])</b></p>
+							<ul>
+								<li><b>url</b> — адрес запроса.</li>
+								<li><b>settings</b> — в этом параметре можно задать настройки для данного запроса. Задается с помощью объекта в формате {имя:значение, имя:значение...}. Ни одна из настроек не является обязательной. Установить настройки по умолчанию можно с помощью метода <b>$.ajaxSetup()</b>.</li>
+							</ul>
+							<p><b>jQuery.ajax(settings)</b><br>Отличие от предыдущего варианта метода заключается лишь в том, что свойство url здесь является частью настроек, а не отдельным параметром.</p>
+							<p><b>Параметры</b></p>
+							<ul>
+								<li><b>async</b> — асинхронность запроса, по умолчанию true</li>
+								<li><b>cache</b> — вкл/выкл кэширование данных браузером, по умолчанию true</li>
+								<li><b>contentType</b> — по умолчанию «application/x-www-form-urlencoded»</li>
+								<li><b>data</b> — передаваемые данные — строка иль объект</li>
+								<li><b>dataFilter</b> — фильтр для входных данных</li>
+								<li><b>dataType</b> — тип данных возвращаемых в callback функцию (xml, html, script, json, text, _default)</li>
+								<li><b>global</b> — тригер — отвечает за использование глобальных AJAX Event'ов, по умолчанию true</li>
+								<li><b>ifModified</b> — тригер — проверяет были ли изменения в ответе сервера, дабы не слать еще запрос, по умолчанию false</li>
+								<li><b>jsonp</b> — переустановить имя callback функции для работы с JSONP (по умолчанию генерируется на лету)</li>
+								<li><b>processData</b> — по умолчанию отправляемые данный заворачиваются в объект, и отправляются как «application/x-www-form-urlencoded», если надо иначе — отключаем</li>
+								<li><b>scriptCharset</b> — кодировочка — актуально для JSONP и подгрузки JavaScript'ов</li>
+								<li><b>timeout</b> — время таймаут в миллисекундах</li>
+								<li><b>type</b> — GET либо POST</li>
+								<li><b>url</b> — url запрашиваемой страницы</li>
+							</ul>
+							<script async src="https://jsfiddle.net/wqL7yeqv/embed/js/dark/"></script>
+							<h2>Методы</h2>
+							<p>Методы отправки <b>POST, GET, HEAD, DELETE.</b> Установка типо в запроса в jquery.ajax </p>
+							<p><b>jQuery.get </b><br>Загружает страницу, используя для передачи данных GET запрос. Может принимать следующие параметры:</p>
+							<ul>
+								<li>url запрашиваемой страницы</li>
+								<li>передаваемые данные (необязательный параметр)</li>
+								<li>callback функция, которой будет скормлен результат (необязательный параметр)</li>
+								<li>тип данных возвращаемых в callback функцию (xml, html, script, json, text, _default)</li>
+							</ul>
+							<p><b>jQuery.post</b><br>Данный метод аналогичен предыдущему, лишь передаваемые данные уйдут на сервер посредством POST'а. Может принимать следующие параметры:     </p>
+							<ul>
+								<li>url запрашиваемой страницы</li>
+								<li>передаваемые данные (необязательный параметр)</li>
+								<li>callback функция, которой будет скормлен результат (необязательный параметр)</li>
+								<li>тип данных возвращаемых в callback функцию (xml, html, script, json, text, _default)</li>
+							</ul>
+							<script async src="https://jsfiddle.net/jo0nrwzt/embed/js/dark/"></script>
+							<p><b>jQuery.getJSON</b><br>Загружает данные в формате JSON (удобней и быстрее нежели XML). Может принимать следующие параметры</p>
+							<ul>
+								<li>url запрашиваемой страницы</li>
+								<li>передаваемые данные (необязательный параметр)</li>
+								<li>callback функция, которой будет скормлен результат (необязательный параметр)</li>
+							</ul>
+							<script async src="https://jsfiddle.net/pcpbmdx9/1/embed/js/dark/"></script>
+							<p><b>jQuery.getScript</b><br>Данная функция загружает и выполняет локальный JavaScript. Может принимать следующие параметры:</p>
+							<ul>
+								<li>url запрашиваемого скрипта</li>
+								<li>callback функция, которой будет скормлен результат (необязательный параметр)</li>
+							</ul>
+							<script async src="https://jsfiddle.net/10nxj5rg/embed/js/dark/"></script>
+							<p><b>jQuery.head</b></p>
+							<script async src="https://jsfiddle.net/3fL1535e/1/embed/js/dark/"></script>
+							<p><b>jQuery.put</b></p>
+							<script async src="https://jsfiddle.net/Ltxso53c/embed/js/dark/"></script>
+							<p><b>jQuery.delete</b></p>
+							<script async src="https://jsfiddle.net/26e9xnoz/embed/js/dark/"></script>
+							<h2>Заголовки</h2>
+							<p><b>accepts:map(зависит от DataType)</b><br>При выполнении запроса, в заголовках (header) указываются допустимые типы содержимого, ожидаемого от сервера. Значения этих типов будут взяты из параметра accepts.</p>
+							<p><b>contentType:string('application/x-www-form-urlencoded')</b><br>При отправлении запроса на сервер, данные передаются в формате, указанном в contentType. По умолчанию используется 'application/x-www-form-urlencoded', который подходит в большинстве случаев. Если указать этот параметр явно, то он будет передан серверу (даже если туда не были отправлены никакие данные). Стоит отметить, что данные всегда будут передаваться в кодировке UTF-8. Это стоит учитывать при обработке данных на стороне сервера.</p>
+							<p><b>url:string(адрес текущей страницы)</b>Определяет адрес, на который будет отправлен запрос.</p>
+							<p><b>xhr:function(ActiveXObject в IE, XMLHttpRequest в других браузерах)</b>Функция, которая предоставит объект XMLHttpRequest. По умолчанию, для браузеров IE этим объектом является ActiveXObject, а в остальных случаях это XMLHttpRequest. С помощью этого параметра вы можете внедрить собственную версию этого объекта.</p>
+							<p><b>Параметр dataType</b>Функция $.ajax() узнает о типе присланных сервером данных от самого сервера (средствами MIME). Кроме этого, существует возможность лично указать (уточнить), как следует интерпретировать эти данные. Это делается с помощью параметра dataType. Возможные значения этого параметра:</p>
+							<ul>
+								<li><b>"xml"</b> — полученный xml-документ будет доступен в текстовом виде. С ним можно работать стандартными средствами jQuery (также как и с документом html).</li>
+								<li><b>"html"</b> — полученный html будет доступен в текстовом виде. Если он содержит скрипты в тегах , то они будут автоматически выполнены, только когда html-текст будет помещен в DOM.</li>
+								<li><b>"script"</b> — полученные данные будут исполнены как javascript. Переменные, которые обычно содержат ответ от сервера будут содержать объект jqXHR.</li>
+								<li><b>"json"</b>, "jsonp" — полученные данные будут предварительно преобразованы в javascript-объект. Если разбор окажется неудачным (что может случиться, если json содержит ошибки), то будет вызвано исключение ошибки разбора файла. Если сервер, к которому вы обращаетесь, находится на другом домене, то вместо json следует использовать jsonp. Узнать о json и jsonp можно на википедии.</li>
+								<li><b>"text"</b> — полученные данные окажутся доступными в виде обычного текста, без предварительной обработки.</li>
+							</ul>
+							<h2>Пример</h2>
+							<p>Пример пагинация - на странице Витамед акции. Делает запрос на сервер получает следующию страницу от пагинации добавляет на страницу. <a href="http://vitamed-tver.ru/actions/">http://vitamed-tver.ru/actions/</a></p>
+							<script async src="https://jsfiddle.net/aoo66zz6/embed/js/dark/"></script>
+							<h2>Defer</h2>
+							<p><b>Deferred</b> объекты появились в jQuery 1.5. Они позволяют отделить логику, которая зависит от результатов выполнения действия от самого действия. Для JavaScript Deferred объекты не новы, они уже были в MochiKit и Dojo, но с изменениями 		логики jQuery ajax от Julian Aubourg, внедрение Deferred объектов было неминуемо. С Deferred объектами несколько callback могут быть связаны с результатом задачи и любые из них могут быть привязаны к действию даже после начала его	выполнения. Выполняемая задача может быть асинхронна, но не обязательно.</p>
+							<script async src="https://jsfiddle.net/sakm3vc8/embed/js/dark/"></script>
+							<h3>Рабочий пример в консоле</h3>
+							<p>Добавте следующий код в консоль и посмотрите что получится</p>
+							<script async src="https://jsfiddle.net/ehynds/Mrqf8/embed/js/dark/"></script>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<script src="js/modernizr.min.js" ></script>
+		<script src="js/jquery.min.js" ></script>
+	</body>
+</html>
+
+
+
